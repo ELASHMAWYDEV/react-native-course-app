@@ -6,6 +6,7 @@ import { AdMobBanner, AdMobInterstitial } from "expo-ads-admob";
 //Components
 import Header from "../components/Header";
 import Loading from "../components/Loading";
+import NoConnection from "../components/NoConnection";
 
 //Config
 import {
@@ -57,6 +58,7 @@ const Home = (props) => {
     <View style={styles.container}>
       <Header reloadWebView={reloadWebView} {...props} />
       {isLoading && <Loading />}
+      <NoConnection />
       <WebView
         source={{ uri: url }}
         style={styles.webView}
