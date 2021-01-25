@@ -94,7 +94,7 @@ const CustomDrawer = (props) => {
       <Text style={styles.appName}>{APP_NAME}</Text>
       <View style={styles.btnsContainer}>
         <TouchableNativeFeedback
-          onPress={() => props.navigation.navigate("Home")}
+          onPress={() => props.navigation.navigate("Home", { reload: true })}
           useForeground
         >
           <View style={styles.btn}>

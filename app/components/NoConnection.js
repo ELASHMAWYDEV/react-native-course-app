@@ -22,7 +22,6 @@ const NoConnection = () => {
 
   const checkConnection = async () => {
     let conn = (await netInfo.isConnected) && netInfo.isInternetReachable;
-    console.log(conn);
     setVisible(!conn);
   };
 

@@ -26,8 +26,21 @@ const Home = (props) => {
 
   useEffect(() => {
     // setTimeout(() => displayInterstitial(), 5000);
-    console.log(isLoading);
   }, []);
+
+
+
+
+  
+  useEffect(() => {
+    if (props.route.params && props.route.params.reload) {
+      props.navigation.setParams({ reload: false });
+      reloadWebView();
+    }
+  }, [props.route.params && props.route.params.reload]);
+
+
+
 
   const displayInterstitial = async () => {
     try {
@@ -51,8 +64,6 @@ const Home = (props) => {
   const reloadWebView = () => {
     setUrl(`http://salary.app-other.com?t=${new Date().getTime()}`);
   };
-
-  // console.log(props.navigation.openDrawer);
 
   return (
     <View style={styles.container}>

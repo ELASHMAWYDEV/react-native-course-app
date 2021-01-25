@@ -2,7 +2,7 @@
   "expo": {
     "name": "my-app",
     "slug": "my-app",
-    "version": "1.0.0",
+    "version": "1.1",
     "orientation": "portrait",
     "icon": "./app/assets/main-img/icon.png",
     "splash": {
@@ -18,18 +18,22 @@
     ],
     "ios": {
       "supportsTablet": true,
+      "buildNumber": "1.1",
       "config": {
         "googleMobileAdsAppId": "ca-app-pub-4168953325851257~6404384415"
-      }
+      },
+      "bundleIdentifier": "com.elashmawydev.myapp"
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/main-img/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
       "config": {
         "googleMobileAdsAppId": "ca-app-pub-4168953325851257~9837019504"
-      }
+      },
+      "package": "com.elashmawydev.myapp"
     },
     "web": {
       "favicon": "./app/assets/main-img/favicon.png"

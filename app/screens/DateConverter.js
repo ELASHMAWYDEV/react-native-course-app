@@ -12,7 +12,6 @@ const DateConverter = (props) => {
     setUrl(`http://sdate.app-other.com/?t=${new Date().getTime()}`);
   };
 
-  // console.log(props.navigation.openDrawer);
 
   return (
     <View style={styles.container}>
